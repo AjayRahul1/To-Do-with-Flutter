@@ -50,6 +50,7 @@ class ToDoItem extends StatelessWidget {
           child: IconButton(
             onPressed: () {
               print('Clicked on delete icon');
+              onDeleteItem(todo.id);
             },
             iconSize: 18,
             icon: Icon(Icons.delete),
